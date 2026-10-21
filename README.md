@@ -2,7 +2,7 @@
 A Least Recently Used (LRU) cache with O(1) get and put, built from a hash map and a doubly linked list.
 
 
-Approach
+# Approach
 
 A dict maps each key to its node in a linked list, so lookups are O(1).
 A doubly linked list keeps entries in order of use: the most recently used is at the front, the least recently used at the back. Because each node knows its prev and next, any node can be unlinked in O(1).
